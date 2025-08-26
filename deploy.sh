@@ -88,11 +88,11 @@ chmod 600 traefik-data/acme.json
 
 # Pull latest images
 echo "Pulling Docker images..."
-docker-compose pull
+docker compose pull
 
 # Start services
 echo "Starting services..."
-docker-compose up -d
+docker compose up -d
 
 # Wait for services to be ready
 echo "Waiting for services to start..."
@@ -101,7 +101,7 @@ sleep 10
 # Check service status
 echo ""
 echo "Service Status:"
-docker-compose ps
+docker compose ps
 
 echo ""
 echo "Deployment complete!"
@@ -111,5 +111,5 @@ echo "  - n8n: https://n8n.intelligencebox.it"
 echo "  - Traefik Dashboard: https://traefik.intelligencebox.it"
 echo ""
 echo "View logs with:"
-echo "  docker-compose logs -f n8n"
-echo "  docker-compose logs -f traefik"
+echo "  docker compose logs -f n8n"
+echo "  docker compose logs -f traefik"
