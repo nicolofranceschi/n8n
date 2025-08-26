@@ -1,0 +1,9 @@
+.env
+traefik-data/
+n8n-data/
+postgres-data/
+redis-data/
+local-files/
+*.log
+*.pid
+.DS_Store
